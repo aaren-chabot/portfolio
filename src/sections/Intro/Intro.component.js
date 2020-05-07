@@ -2,7 +2,6 @@ import React from 'react';
 
 import Typography from '../../components/Typography/Typography.component';
 import TitledLogo from '../../components/TitledLogo/TitledLogo.component';
-import Icon from '../../components/Icon/Icon.component';
 import Spacer from '../../components/Spacer/Spacer.component';
 
 import styles from './Intro.module.scss';
