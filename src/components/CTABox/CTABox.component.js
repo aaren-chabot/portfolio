@@ -13,7 +13,7 @@ const CTABox = ({ bodyText, ctaText, buttonClick }) => {
         <Typography weight="semi">{bodyText}</Typography>
       </div>
       <div className={cta}>
-        <Button></Button>
+        <Button onClick={buttonClick} >{ctaText}</Button>
       </div>
     </div>
   );
