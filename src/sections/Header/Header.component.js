@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Logo from "../../components/Logo/Logo.component";
-import Link from "../../components/Link/Link.component";
-import NavLink from "../../components/NavLink/NavLink.component";
+import Logo from '../../components/Logo/Logo.component';
+import Link from '../../components/Link/Link.component';
+import NavLink from '../../components/NavLink/NavLink.component';
 
-import styles from "./Header.module.scss";
+import styles from './Header.module.scss';
 
 const Header = () => {
   const { header, logo, navigation } = styles;

@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import Typography from "../../components/Typography/Typography.component";
-import Spacer from "../../components/Spacer/Spacer.component";
-import CTABox from "../../components/CTABox/CTABox.component";
+import Typography from '../../components/Typography/Typography.component';
+import Spacer from '../../components/Spacer/Spacer.component';
+import CTABox from '../../components/CTABox/CTABox.component';
 
-import styles from "./Services.module.scss";
-import storeIcon from "../../assets/storefront-icon.png";
-import cartIcon from "../../assets/shopping-cart-icon.png";
-import websiteIcon from "../../assets/website-icon.png";
+import styles from './Services.module.scss';
+import storeIcon from '../../assets/storefront-icon.png';
+import cartIcon from '../../assets/shopping-cart-icon.png';
+import websiteIcon from '../../assets/website-icon.png';
 
 const Services = () => {
   return (

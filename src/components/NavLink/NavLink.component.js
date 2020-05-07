@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./NavLink.module.scss";
+import styles from './NavLink.module.scss';
 
 const NavLink = ({ href, icon, children }) => {
   return (

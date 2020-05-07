@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import Typography from "../../components/Typography/Typography.component";
-import TitledLogo from "../../components/TitledLogo/TitledLogo.component";
-import Icon from "../../components/Icon/Icon.component";
-import Spacer from "../../components/Spacer/Spacer.component";
+import Typography from '../../components/Typography/Typography.component';
+import TitledLogo from '../../components/TitledLogo/TitledLogo.component';
+import Icon from '../../components/Icon/Icon.component';
+import Spacer from '../../components/Spacer/Spacer.component';
 
-import styles from "./Intro.module.scss";
-import image from "../../assets/intro-image.png";
+import styles from './Intro.module.scss';
+import image from '../../assets/intro-image.png';
 
 const Intro = () => {
-  const { intro, title, left, right, "logo-list": logoList } = styles;
+  const { intro, title, left, right, 'logo-list': logoList } = styles;
   return (
     <div className={`intro ${intro}`}>
       <Typography className={title} element="h1">

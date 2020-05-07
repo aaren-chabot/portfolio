@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import Typography from "../../components/Typography/Typography.component";
-import Link from "../../components/Link/Link.component";
+import Typography from '../../components/Typography/Typography.component';
+import Link from '../../components/Link/Link.component';
 
-import styles from "./Project.module.scss";
+import styles from './Project.module.scss';
 
 const Project = ({ project }) => {
   const [projectData, setProjectData] = useState({
     links: [],
     frontend: [],
     backend: [],
-    cms: [],
+    cms: []
   });
 
   useEffect(() => {
     import(`../../assets/${project.image}`).then((img) =>
       setProjectData({
         ...project,
-        frontend: project.frontend.join(", "),
-        backend: project.backend.join(", "),
-        cms: project.cms.join(", "),
-        img: img.default,
+        frontend: project.frontend.join(', '),
+        backend: project.backend.join(', '),
+        cms: project.cms.join(', '),
+        img: img.default
       })
     );
   }, [project]);

@@ -1,40 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Typography from "../../components/Typography/Typography.component";
-import Button from "../../components/Button/Button.component";
+import Typography from '../../components/Typography/Typography.component';
+import Button from '../../components/Button/Button.component';
 
-import styles from "./ContactForm.module.scss";
+import styles from './ContactForm.module.scss';
 
 const ContactForm = () => {
   const initialForm = {
     name: {
-      label: "Name:",
-      value: "",
-      placeholder: "Enter your name...",
+      label: 'Name:',
+      value: '',
+      placeholder: 'Enter your name...'
     },
     email: {
-      label: "Email:",
-      value: "",
-      placeholder: "Enter your email...",
+      label: 'Email:',
+      value: '',
+      placeholder: 'Enter your email...'
     },
     message: {
-      label: "Message:",
-      value: "",
-      placeholder: "Enter your message...",
-    },
+      label: 'Message:',
+      value: '',
+      placeholder: 'Enter your message...'
+    }
   };
   const [formData, setFormData] = useState(initialForm);
 
   useEffect(() => {}, [formData]);
 
   const handleChange = (e) => {
-    const input = e.target.getAttribute("name");
+    const input = e.target.getAttribute('name');
     setFormData({
       ...formData,
       [input]: {
         ...formData[input],
-        value: e.target.value,
-      },
+        value: e.target.value
+      }
     });
   };
 
@@ -43,14 +43,14 @@ const ContactForm = () => {
     const formValues = {
       name: formData.name.value,
       email: formData.email.value,
-      message: formData.message.value,
+      message: formData.message.value
     };
-    console.log("submit", formValues);
+    console.log('submit', formValues);
   };
 
   const { name, email, message } = formData;
   return (
-    <div className={styles["contact-form"]}>
+    <div className={styles['contact-form']}>
       <form>
         <Typography element="label" htmlFor="name">
           {name.label}

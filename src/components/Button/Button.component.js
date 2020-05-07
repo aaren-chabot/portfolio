@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import Icon from "../Icon/Icon.component";
+import Icon from '../Icon/Icon.component';
 
-import styles from "./Button.module.scss";
+import styles from './Button.module.scss';
 
 const Button = ({ onClick: handleClick, type, isDisabled }) => {
   return (
     <button
       className={`button ${styles.button}`}
-      type={type ? type : "button"}
+      type={type ? type : 'button'}
       onClick={(e) => handleClick(e)}
       disabled={isDisabled}
     >

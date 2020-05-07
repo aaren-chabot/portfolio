@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import styles from "./TitledLogo.module.scss";
+import styles from './TitledLogo.module.scss';
 
 const TitledLogo = ({ logo, text }) => {
   const [logoIcon, setLogo] = useState(null);

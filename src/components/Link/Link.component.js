@@ -1,8 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Link.module.scss";
-
-// TODO: anchor, disabled states, icon
+import styles from './Link.module.scss';
 
 const Link = ({ text, withIcon, href, children }) => {
   const { link, wrapper } = styles;

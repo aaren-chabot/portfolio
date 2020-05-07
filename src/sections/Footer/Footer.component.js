@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import Logo from "../../components/Logo/Logo.component";
-import Link from "../../components/Link/Link.component";
-import NavLink from "../../components/NavLink/NavLink.component";
-import Typography from "../../components/Typography/Typography.component";
+import Logo from '../../components/Logo/Logo.component';
+import Link from '../../components/Link/Link.component';
+import NavLink from '../../components/NavLink/NavLink.component';
+import Typography from '../../components/Typography/Typography.component';
 
-import styles from "./Footer.module.scss";
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   const {
     footer,
     container,
-    "social-list": socialList,
+    'social-list': socialList,
     nav,
-    copywrite,
+    copywrite
   } = styles;
   return (
     <div className={`footer ${footer}`}>
@@ -37,7 +37,7 @@ const Footer = () => {
           <Typography pSize="sm">
             &copy; 2020 Aaren Chabot. All Rights Reserved. Designed by Vindhya
             Raviraj. Illustrations by <NavLink href="/">Icon 8</NavLink>. Icons
-            from <NavLink href="/">Font Awesome</NavLink>. Emojis sourced from{" "}
+            from <NavLink href="/">Font Awesome</NavLink>. Emojis sourced from{' '}
             <NavLink href="/">Twemoji</NavLink>.
           </Typography>
         </div>

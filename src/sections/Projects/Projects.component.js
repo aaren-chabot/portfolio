@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import Typography from "../../components/Typography/Typography.component";
-import Project from "../../components/Project/Project.component";
-import Spacer from "../../components/Spacer/Spacer.component";
-import Button from "../../components/Button/Button.component";
+import Typography from '../../components/Typography/Typography.component';
+import Project from '../../components/Project/Project.component';
+import Spacer from '../../components/Spacer/Spacer.component';
+import Button from '../../components/Button/Button.component';
 
-import styles from "./Projects.module.scss";
+import styles from './Projects.module.scss';
 
-import data from "../../data/projects";
+import data from '../../data/projects';
 
 const Projects = () => {
   const [projectData, setProjectData] = useState([]);

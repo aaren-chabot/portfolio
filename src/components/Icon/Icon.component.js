@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import fa from "./fontawesome";
+import fa from './fontawesome';
 
 const Icon = ({ icon }) => {
   return <>{fa[icon] && <FontAwesomeIcon icon={fa[icon]} />}</>;

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import Typography from "../../components/Typography/Typography.component";
-import ContactForm from "../../components/ContactForm/ContactForm.component";
-import Spacer from "../../components/Spacer/Spacer.component";
+import Typography from '../../components/Typography/Typography.component';
+import ContactForm from '../../components/ContactForm/ContactForm.component';
+import Spacer from '../../components/Spacer/Spacer.component';
 
-import styles from "./Contact.module.scss";
-import img from "../../assets/contact-image.png";
+import styles from './Contact.module.scss';
+import img from '../../assets/contact-image.png';
 
 const Contact = () => {
   const { contact, title, left, right } = styles;
