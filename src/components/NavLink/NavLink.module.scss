@@ -1,0 +1,12 @@
+.navlink {
+  color: var(--c-type-0);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  padding-bottom: 5px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

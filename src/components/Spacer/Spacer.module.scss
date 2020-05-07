@@ -1,0 +1,17 @@
+.spacer {
+  &.xsm {
+    padding-bottom: 10px;
+  }
+  &.sm {
+    padding-bottom: 25px;
+  }
+  &.md {
+    padding-bottom: 40px;
+  }
+  &.lg {
+    padding-bottom: 65px;
+  }
+  &.xlg {
+    padding-bottom: 90px;
+  }
+}

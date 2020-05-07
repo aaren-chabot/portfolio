@@ -1,0 +1,20 @@
+.button {
+  background-color: var(--c-tertiary-1);
+  border-radius: 24px;
+  color: var(--c-type-1);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  padding: 12px 39px;
+  width: fit-content;
+
+  &:hover {
+    box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+  }
+  &.disabled {
+    cursor: none;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

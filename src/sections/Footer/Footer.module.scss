@@ -1,0 +1,42 @@
+.footer {
+  background-color: var(--c-primary-1);
+  padding: 80px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--f-width);
+  padding: var(--s-horizontal-padding);
+
+  display: grid;
+  grid-template-columns: 17% 34% 49%;
+  align-items: start;
+  justify-items: start;
+  justify-content: center;
+}
+
+.logo {
+  // mobile
+}
+
+.nav {
+  padding-top: 5px;
+
+  a {
+    display: block;
+  }
+}
+
+.social-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.copywrite {
+  padding-top: 5px;
+
+  p {
+    margin: 0;
+  }
+}

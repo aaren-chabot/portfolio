@@ -1,0 +1,21 @@
+.contact-form {
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+
+    label {
+      margin-bottom: 4px;
+    }
+    input {
+      margin-bottom: 20px;
+    }
+    textarea {
+      margin-bottom: 35px;
+      height: 170px;
+    }
+    button {
+      align-self: center;
+    }
+  }
+}

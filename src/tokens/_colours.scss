@@ -1,0 +1,28 @@
+$light-blue: #8bd3dd;
+$off-white: #fef6e4;
+$very-dark-blue: #001858;
+$dark-blue: #172c66;
+$pink: #f582ae;
+$peach: #f3d2c1;
+
+:root {
+  --c-type-0: #{$dark-blue};
+  --c-type-1: #{$very-dark-blue};
+
+  --c-primary-0: #{lighten($peach, 10%)};
+  --c-primary-1: #{$peach};
+  --c-primary-2: #{darken($peach, 10%)};
+
+  --c-secondary-0: #{lighten($light-blue, 10%)};
+  --c-secondary-1: #{$light-blue};
+  --c-secondary-2: #{darken($light-blue, 10%)};
+
+  --c-tertiary-0: #{lighten($pink, 10%)};
+  --c-tertiary-1: #{$pink};
+  --c-tertiary-2: #{darken($pink, 10%)};
+
+  --c-highlight-0: #{$off-white};
+  --c-highlight-1: #{$very-dark-blue};
+
+  --c-background: #{$off-white};
+}

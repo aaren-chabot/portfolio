@@ -1,0 +1,45 @@
+.typography {
+  text-align: left;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  // Para ONLY styles
+  &.para-lg {
+    font-size: 28px;
+    line-height: 34px;
+    a {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  &.para-sm {
+    font-size: 16px;
+    a {
+      font-size: 16px;
+    }
+  }
+
+  &.weight_bold {
+    font-weight: 700;
+  }
+  &.weight_semi {
+    font-weight: 500;
+  }
+  &.weight_light {
+    font-weight: 300;
+  }
+
+  &.align_center {
+    text-align: center;
+  }
+  &.weight_right {
+    text-align: right;
+  }
+}
