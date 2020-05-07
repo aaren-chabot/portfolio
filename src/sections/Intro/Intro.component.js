@@ -13,7 +13,7 @@ const Intro = () => {
   return (
     <div className={`intro ${intro}`}>
       <Typography className={title} element="h1">
-        Hi, I'm Vindhya <Icon icon="exit"></Icon>
+        Hi, I'm Vindhya
       </Typography>
       <div className={left}>
         <Typography pSize="lg">
