@@ -4,7 +4,7 @@ import Icon from '../Icon/Icon.component';
 
 import styles from './Button.module.scss';
 
-const Button = ({ onClick: handleClick, type, isDisabled }) => {
+const Button = ({ onClick: handleClick, type, isDisabled, children }) => {
   return (
     <button
       className={`button ${styles.button}`}
@@ -12,8 +12,7 @@ const Button = ({ onClick: handleClick, type, isDisabled }) => {
       onClick={(e) => handleClick(e)}
       disabled={isDisabled}
     >
-      Say Hello
-      <Icon />
+      { children }&nbsp;<Icon icon='rightArrow' />
     </button>
   );
 };

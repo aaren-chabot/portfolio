@@ -17,4 +17,10 @@
     opacity: 0.6;
     pointer-events: none;
   }
+
+  svg {
+    margin-left: 10px;
+    vertical-align: middle !important; //Override FA styles
+    font-size: 15px;
+  }
 }
