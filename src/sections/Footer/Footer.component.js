@@ -4,6 +4,7 @@ import Logo from '../../components/Logo/Logo.component';
 import Link from '../../components/Link/Link.component';
 import NavLink from '../../components/NavLink/NavLink.component';
 import Typography from '../../components/Typography/Typography.component';
+import Icon from '../../components/Icon/Icon.component';
 
 import styles from './Footer.module.scss';
 
@@ -25,10 +26,15 @@ const Footer = () => {
         </div>
         <div className={nav}>
           <div className={socialList}>
-            <NavLink href="/">GH</NavLink>
-            <NavLink href="/">IN</NavLink>
-            <NavLink href="/">TW</NavLink>
-            <NavLink href="/">IG</NavLink>
+            <NavLink href="/">
+              <Icon icon="github" size="lg" />
+            </NavLink>
+            <NavLink href="/">
+              <Icon icon="linkedin" />
+            </NavLink>
+            <NavLink href="/">
+              <Icon icon="hackerrank" />
+            </NavLink>
           </div>
           <NavLink href="/">Projects</NavLink>
           <NavLink href="/">Contact</NavLink>

@@ -3,6 +3,7 @@ import React from 'react';
 import Logo from '../../components/Logo/Logo.component';
 import Link from '../../components/Link/Link.component';
 import NavLink from '../../components/NavLink/NavLink.component';
+import Icon from '../../components/Icon/Icon.component';
 
 import styles from './Header.module.scss';
 
@@ -18,16 +19,25 @@ const Header = () => {
       <nav className={navigation}>
         <ul>
           <li>
-            <NavLink href="/">Github</NavLink>
-          </li>
-          <li>
-            <NavLink href="/">Linkedin</NavLink>
-          </li>
-          <li>
             <NavLink href="/">Projects</NavLink>
           </li>
           <li>
             <NavLink href="/">Contacts</NavLink>
+          </li>
+          <li>
+            <NavLink href="/">
+              <Icon icon="linkedin" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink href="/">
+              <Icon icon="github" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink href="/">
+              <Icon icon="hackerrank" />
+            </NavLink>
           </li>
         </ul>
       </nav>

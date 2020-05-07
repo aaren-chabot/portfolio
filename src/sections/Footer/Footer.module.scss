@@ -22,8 +22,9 @@
 .nav {
   padding-top: 5px;
 
-  a {
+  > a {
     display: block;
+    margin-bottom: 5px;
   }
 }
 
@@ -31,6 +32,11 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin-bottom: 10px;
+
+  a {
+    margin-right: 15px;
+  }
 }
 
 .copywrite {
