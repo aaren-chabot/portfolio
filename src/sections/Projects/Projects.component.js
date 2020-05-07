@@ -26,7 +26,7 @@ const Projects = () => {
           {i + 1 === list.length ? <Spacer size="lg" /> : <Spacer size="xlg" />}
         </>
       ))}
-      <Button className={styles.button}></Button>
+      <Button className={styles.button}>See My GitHub</Button>
     </div>
   );
 };

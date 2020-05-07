@@ -39,6 +39,7 @@ const Services = () => {
       </ul>
       <Spacer size="lg" />
       <CTABox
+        ctaText='Say Hello'
         bodyText={`Feel free to reach out even if your product doesn't fit exactly into the above categories. Let's chat :)`}
       ></CTABox>
     </div>
