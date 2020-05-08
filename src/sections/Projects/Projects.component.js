@@ -21,10 +21,10 @@ const Projects = () => {
       <Typography element="h2">Projects</Typography>
       <Spacer size="sm" />
       {projectData.map((project, i, list) => (
-        <>
-          <Project key={project.name} project={project} />
+        <div key={project.name}>
+          <Project project={project} />
           {i + 1 === list.length ? <Spacer size="lg" /> : <Spacer size="xlg" />}
-        </>
+        </div>
       ))}
       <Button className={styles.button}>See My GitHub</Button>
     </div>
