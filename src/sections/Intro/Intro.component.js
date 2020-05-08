@@ -12,12 +12,12 @@ const Intro = () => {
   return (
     <div className={`intro ${intro}`}>
       <Typography className={title} element="h1">
-        Hi, I'm Vindhya
+        Hi, I'm Aaren
       </Typography>
       <div className={left}>
         <Typography pSize="lg">
-          Focused on the web, I love making experiences that are beautiful,
-          accessible, and usable.
+          I am web focused with a mind for user experience. I love building
+          easily usable products.
         </Typography>
         <Typography>
           These are some technologies and platforms that I enjoy working with:

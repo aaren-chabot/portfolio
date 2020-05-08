@@ -13,15 +13,14 @@ const Services = () => {
   return (
     <div className={`services ${styles.services}`}>
       <Typography className={styles.title} element="h2">
-        I specialize in the following services
+        I specialize in the following services:
       </Typography>
       <Spacer size="lg" />
       <ul>
         <li>
           <img src={storeIcon} alt="Storefront Icon" />
           <Typography align="center">
-            Websites for small businesses looking to start/upgrade their online
-            presence.
+            Websites for businesses looking to upgrade their online presence.
           </Typography>
         </li>
         <li>
@@ -39,8 +38,8 @@ const Services = () => {
       </ul>
       <Spacer size="lg" />
       <CTABox
-        ctaText="Say Hello"
-        bodyText={`Feel free to reach out even if your product doesn't fit exactly into the above categories. Let's chat :)`}
+        ctaText="Contact"
+        bodyText="I offer free consultations and basic web advice. Feel free to reach out no matter your project's stage."
       ></CTABox>
     </div>
   );

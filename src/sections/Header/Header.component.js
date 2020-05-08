@@ -25,17 +25,17 @@ const Header = () => {
             <NavLink href="/">Contacts</NavLink>
           </li>
           <li>
-            <NavLink href="/">
+            <NavLink href="https://www.linkedin.com/in/aaren-chabot-ab936792/">
               <Icon icon="linkedin" />
             </NavLink>
           </li>
           <li>
-            <NavLink href="/">
+            <NavLink href="https://github.com/aaren-chabot">
               <Icon icon="github" />
             </NavLink>
           </li>
           <li>
-            <NavLink href="/">
+            <NavLink href="https://www.hackerrank.com/chabot_aaren">
               <Icon icon="hackerrank" />
             </NavLink>
           </li>

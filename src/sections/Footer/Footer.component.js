@@ -27,13 +27,13 @@ const Footer = () => {
         </div>
         <div className={nav}>
           <div className={socialList}>
-            <NavLink href="/">
+            <NavLink href="https://github.com/aaren-chabot">
               <Icon icon="github" size="lg" />
             </NavLink>
-            <NavLink href="/">
+            <NavLink href="https://www.linkedin.com/in/aaren-chabot-ab936792/">
               <Icon icon="linkedin" />
             </NavLink>
-            <NavLink href="/">
+            <NavLink href="https://www.hackerrank.com/chabot_aaren">
               <Icon icon="hackerrank" />
             </NavLink>
           </div>

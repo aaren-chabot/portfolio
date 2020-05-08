@@ -15,10 +15,10 @@ const Contact = () => {
         Contact Me
       </Typography>
       <div className={left}>
-        <Typography pSize="lg">Let’s make something awesome!</Typography>
+        <Typography pSize="lg">Let's discuss your next project!</Typography>
         <Typography>
           Feel free to contact me through this form. Don’t like forms? Email me
-          at hi@vindhya.dev. I look forward to hearing from you
+          at chabot.aaren@gmail.com. I look forward to hearing from you.
         </Typography>
         <Spacer size="md"></Spacer>
         <div>
