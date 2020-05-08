@@ -1,3 +1,16 @@
 .project {
   max-width: 700px;
+
+  svg {
+    color: var(--c-type-0);
+    vertical-align: baseline !important; // fa style overwrite
+    font-size: 14px;
+    margin-right: 4px;
+  }
+}
+
+.links {
+  white-space: nowrap;
+  width: fit-content;
+  display: inline-block;
 }

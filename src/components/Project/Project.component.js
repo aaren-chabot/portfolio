@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import Typography from '../../components/Typography/Typography.component';
-import Link from '../../components/Link/Link.component';
+import Typography from '../Typography/Typography.component';
+import Link from '../Link/Link.component';
+import Icon from '../Icon/Icon.component';
 
 import styles from './Project.module.scss';
 
@@ -50,8 +51,11 @@ const Project = ({ project }) => {
           )}
         </ul>
       </Typography>
-      {links.map(({ text, href }) => (
-        <Link href={href} key={text} text={text} />
+      {links.map(({ text, href, github }) => (
+        <div className={styles.links}>
+          <Icon icon={github ? 'github' : 'exit'}></Icon>
+          <Link href={href} key={text} text={text} />
+        </div>
       ))}
     </div>
   );
