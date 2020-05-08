@@ -10,6 +10,7 @@ const Typography = ({
   className,
   pSize,
   align,
+  warning,
   ...props
 }) =>
   React.createElement(
@@ -22,7 +23,8 @@ const Typography = ({
         className,
         weight,
         element === 'p' && styles[`para-${pSize}`],
-        styles[`align_${align}`]
+        styles[`align_${align}`],
+        styles[`warning_${warning}`]
       )
     },
     children
@@ -34,7 +36,8 @@ Typography.defaultProps = {
   element: 'p',
   weight: '',
   align: '',
-  pSize: ''
+  pSize: '',
+  warning: ''
 };
 
 export default Typography;

@@ -34,7 +34,7 @@ export const messages = {
     sending: 'Sending...',
     sent: 'Thank you for reaching out. I will respond withing 48 hours.',
     error: 'There was an error. Please try again later',
-    initial: ''
+    initial: null
   },
   name: {
     length: 'You must enter your name to submit.'

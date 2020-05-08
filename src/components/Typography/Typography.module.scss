@@ -43,4 +43,11 @@
   &.weight_right {
     text-align: right;
   }
+
+  &[class*='warning_'] {
+    margin: 0;
+  }
+  &.warning_error {
+    color: red;
+  }
 }

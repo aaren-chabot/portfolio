@@ -88,6 +88,11 @@ const ContactForm = () => {
         <Typography element="label" htmlFor="name">
           {name.label}
         </Typography>
+        {messages.name[name.state] && (
+          <Typography warning="error" className="warning_error">
+            {messages.name[name.state]}
+          </Typography>
+        )}
         <input
           type="text"
           id="name"
@@ -100,6 +105,11 @@ const ContactForm = () => {
         <Typography element="label" htmlFor="email">
           {email.label}
         </Typography>
+        {messages.email[email.state] && (
+          <Typography warning="error" className="warning_error">
+            {messages.email[email.state]}
+          </Typography>
+        )}
         <input
           type="email"
           id="email"
@@ -112,6 +122,11 @@ const ContactForm = () => {
         <Typography element="label" htmlFor="message">
           {message.label}
         </Typography>
+        {messages.message[message.state] && (
+          <Typography warning="error" className="warning_error">
+            {messages.message[message.state]}
+          </Typography>
+        )}
         <textarea
           type="text"
           id="message"
@@ -121,6 +136,9 @@ const ContactForm = () => {
           onChange={(e) => handleChange(e)}
         />
 
+        {messages.form[state] && (
+          <Typography align="center">{messages.form[state]}</Typography>
+        )}
         <Button
           type="submit"
           onClick={(e) => handleSubmit(e)}
