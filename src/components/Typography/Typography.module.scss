@@ -1,15 +1,6 @@
 .typography {
   text-align: left;
 
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 5px;
-    }
-  }
-
   // Para ONLY styles
   &.para-lg {
     font-size: 28px;
