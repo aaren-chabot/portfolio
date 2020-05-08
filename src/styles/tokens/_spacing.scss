@@ -8,4 +8,8 @@
   --s-horizontal-padding: 20px;
 
   --c-vertical-margin: 20px;
+
+  @media (max-width: 767px) {
+    --s-horizontal-padding: 10px;
+  }
 }

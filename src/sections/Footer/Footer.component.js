@@ -14,12 +14,13 @@ const Footer = () => {
     container,
     'social-list': socialList,
     nav,
-    copywrite
+    copywrite,
+    logo
   } = styles;
   return (
     <div className={`footer ${footer}`}>
       <div className={container}>
-        <div>
+        <div className={logo}>
           <Link href="/">
             <Logo />
           </Link>

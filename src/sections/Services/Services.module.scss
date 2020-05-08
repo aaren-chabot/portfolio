@@ -11,9 +11,22 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
   }
 
   li {
     text-align: center;
+  }
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    margin: 0;
   }
 }

@@ -12,7 +12,7 @@ import websiteIcon from '../../assets/website-icon.png';
 const Services = () => {
   return (
     <div className={`services ${styles.services}`}>
-      <Typography element="h2" weight="bold" align="center">
+      <Typography className={styles.title} element="h2">
         I specialize in the following services
       </Typography>
       <Spacer size="lg" />
@@ -39,7 +39,7 @@ const Services = () => {
       </ul>
       <Spacer size="lg" />
       <CTABox
-        ctaText='Say Hello'
+        ctaText="Say Hello"
         bodyText={`Feel free to reach out even if your product doesn't fit exactly into the above categories. Let's chat :)`}
       ></CTABox>
     </div>

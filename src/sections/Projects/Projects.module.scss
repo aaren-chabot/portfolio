@@ -18,3 +18,9 @@
     margin-right: 55px;
   }
 }
+
+.title {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}

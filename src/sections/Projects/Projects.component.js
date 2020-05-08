@@ -16,9 +16,12 @@ const Projects = () => {
     setProjectData(data);
   }, []);
 
+  const { projects, title } = styles;
   return (
-    <div className={`projects ${styles.projects}`}>
-      <Typography element="h2">Projects</Typography>
+    <div className={`projects ${projects}`}>
+      <Typography className={title} element="h2">
+        Projects
+      </Typography>
       <Spacer size="sm" />
       {projectData.map((project, i, list) => (
         <div key={project.name}>
