@@ -9,29 +9,35 @@
   overflow: hidden;
   padding-bottom: 5px;
 
-  &:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    white-space: nowrap;
-    color: transparent;
+  &:hover {
     text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: var(--c-type-0);
-    content: attr(data-text) attr(data-text);
-    text-underline-position: under;
   }
-  &:hover:after {
-    animation: wavy-slide 3s linear infinite;
-  }
-}
 
-@keyframes wavy-slide {
-  to {
-    transform: translateX(-100px);
-  }
+  // TODO: Wavy Underline
+
+  //   &:after {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     white-space: nowrap;
+  //     color: transparent;
+  //     text-decoration: underline;
+  //     text-decoration-style: wavy;
+  //     text-decoration-color: var(--c-type-0);
+  //     content: attr(data-text) attr(data-text);
+  //     text-underline-position: under;
+  //   }
+  //   &:hover:after {
+  //     animation: wavy-slide 3s linear infinite;
+  //   }
+  // }
+
+  // @keyframes wavy-slide {
+  //   to {
+  //     transform: translateX(-100px);
+  //   }
 }
 
 .wrapper {
