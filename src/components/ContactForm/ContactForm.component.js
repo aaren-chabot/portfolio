@@ -7,30 +7,49 @@ import Button from '../../components/Button/Button.component';
 import styles from './ContactForm.module.scss';
 import { formStates, initFormData, messages } from './ContactForm.Context';
 
+const checkFormValid = (obj, ...fields) => {
+  return !fields.filter((field) => {
+    return obj[field].state !== 'valid';
+  }, []).length;
+};
+
 const ContactForm = () => {
   const [formData, setFormData] = useState(initFormData);
 
   const handleChange = (e) => {
     const input = e.target.getAttribute('name');
-    let errorType;
+    let inputState;
 
     // Handle Errors
     if (!e.target.validity.valid) {
-      errorType = 'invalid';
+      inputState = 'invalid';
     } else if (e.target.value.trim().length === 0) {
-      errorType = 'length';
+      inputState = 'length';
     } else {
-      errorType = '';
+      inputState = 'valid';
     }
 
-    setFormData({
-      ...formData,
-      [input]: {
-        ...formData[input],
-        value: e.target.value.trim(),
-        errorType
-      }
-    });
+    if (checkFormValid(formData, 'name', 'email', 'message')) {
+      setFormData({
+        ...formData,
+        state: formStates.valid,
+        [input]: {
+          ...formData[input],
+          value: e.target.value.trim(),
+          state: inputState
+        }
+      });
+    } else {
+      setFormData({
+        ...formData,
+        state: formStates.initial,
+        [input]: {
+          ...formData[input],
+          value: e.target.value.trim(),
+          state: inputState
+        }
+      });
+    }
   };
 
   const handleSubmit = (e) => {
@@ -62,7 +81,7 @@ const ContactForm = () => {
       });
   };
 
-  const { name, email, message, buttonText } = formData;
+  const { name, email, message, buttonText, state } = formData;
   return (
     <div className={styles['contact-form']}>
       <form>
@@ -102,7 +121,11 @@ const ContactForm = () => {
           onChange={(e) => handleChange(e)}
         />
 
-        <Button type="submit" onClick={(e) => handleSubmit(e)}>
+        <Button
+          type="submit"
+          onClick={(e) => handleSubmit(e)}
+          isDisabled={state !== 'valid'}
+        >
           {buttonText}
         </Button>
       </form>
