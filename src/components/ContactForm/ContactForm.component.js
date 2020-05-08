@@ -5,20 +5,21 @@ import Typography from '../../components/Typography/Typography.component';
 import Button from '../../components/Button/Button.component';
 
 import styles from './ContactForm.module.scss';
-import api from '../../constants';
 import { formStates, initFormData, messages } from './ContactForm.Context';
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState(initFormData);
+  const [formData, setFormData] = useState(initFormData);
+
+  console.log('env', process.env.REACT_APP_TEST);
 
   const handleChange = (e) => {
     const input = e.target.getAttribute('name');
     let errorType;
 
     // Handle Errors
-    if(!e.target.validity.valid) {
+    if (!e.target.validity.valid) {
       errorType = 'invalid';
-    } else if(e.target.value.trim().length === 0) {
+    } else if (e.target.value.trim().length === 0) {
       errorType = 'length';
     } else {
       errorType = '';
@@ -32,7 +33,7 @@ const ContactForm = () => {
         errorType
       }
     });
-    console.log('data', formData)
+    console.log('data', formData);
   };
 
   const handleSubmit = (e) => {
@@ -48,7 +49,7 @@ const ContactForm = () => {
     };
 
     axios
-      .post(api.FORMSPREE, formValues)
+      .post(process.env.REACT_APP_FORMSPREE, formValues)
       .then(() => {
         setFormData({
           ...initFormData,
