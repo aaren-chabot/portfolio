@@ -10,8 +10,6 @@ import { formStates, initFormData, messages } from './ContactForm.Context';
 const ContactForm = () => {
   const [formData, setFormData] = useState(initFormData);
 
-  console.log('env', process.env.REACT_APP_TEST);
-
   const handleChange = (e) => {
     const input = e.target.getAttribute('name');
     let errorType;
@@ -33,7 +31,6 @@ const ContactForm = () => {
         errorType
       }
     });
-    console.log('data', formData);
   };
 
   const handleSubmit = (e) => {

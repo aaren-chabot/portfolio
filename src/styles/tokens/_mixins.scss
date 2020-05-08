@@ -10,6 +10,11 @@
   }
 }
 
+@mixin test() {
+  color: red;
+  @content;
+}
+
 // Tablets
 // @media (min-width: 768px) {
 

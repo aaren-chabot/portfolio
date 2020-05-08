@@ -1,4 +1,9 @@
-@import "./tokens/normailize";
-@import "./tokens/colours";
-@import "./tokens//typography";
-@import "./tokens//spacing";
+// Globals
+@import './styles/globals/normailize';
+@import './styles/globals/init';
+
+// Tokens
+@import './styles/tokens/colours';
+@import './styles/tokens/typography';
+@import './styles/tokens/spacing';
+@import './styles/tokens/mixins';
