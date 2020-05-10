@@ -19,10 +19,14 @@ const Header = () => {
       <nav className={navigation}>
         <ul>
           <li>
-            <NavLink href="/">Projects</NavLink>
+            <NavLink href="/" scrollTo="projects">
+              Projects
+            </NavLink>
           </li>
           <li>
-            <NavLink href="/">Contacts</NavLink>
+            <NavLink href="/" scrollTo="contact">
+              Contacts
+            </NavLink>
           </li>
           <li>
             <NavLink href="https://www.linkedin.com/in/aaren-chabot-ab936792/">

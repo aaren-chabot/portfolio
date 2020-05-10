@@ -37,8 +37,12 @@ const Footer = () => {
               <Icon icon="hackerrank" />
             </NavLink>
           </div>
-          <NavLink href="/">Projects</NavLink>
-          <NavLink href="/">Contact</NavLink>
+          <NavLink href="/" scrollTo="projects">
+            Projects
+          </NavLink>
+          <NavLink href="/" scrollTo="contact">
+            Contacts
+          </NavLink>
         </div>
         <div className={copywrite}>
           <Typography pSize="sm">
