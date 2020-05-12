@@ -1,27 +1,17 @@
 export default [
   {
-    image: 'data-visualization.png',
-    name: 'Data Visualization',
+    image: 'react-ecom-site.png',
+    name: 'E-commerce Site',
     description:
-      'A full-stack web application built to visualize Bridge School cohort applicant data over different cohorts. This application is to be used to better target marketing efforts by Bridge executives.',
-    frontend: ['React', 'Netlify'],
-    backend: ['Node.js', 'Express', 'Heroku', 'Firebase'],
+      'A full-stack web application built for e-commerce. This application can easily be leveraged for any new e-commerce site. Integrated to Stripe to handle payments.',
+    frontend: ['React', 'Redux', 'Redux-Saga'],
+    backend: ['Node.js', 'Express', 'Firebase', 'Stripe'],
     cms: [],
     links: [
       {
-        github: false,
-        href: '/',
-        text: 'View the Project'
-      },
-      {
         github: true,
-        href: '/',
+        href: 'https://github.com/aaren-chabot/ecom-site',
         text: 'Frontend Repository'
-      },
-      {
-        github: true,
-        href: '/',
-        text: 'Backend Repository'
       }
     ]
   },
@@ -47,17 +37,17 @@ export default [
     ]
   },
   {
-    image: 'flossary.png',
-    name: 'Flossary',
+    image: 'react-cc-form.png',
+    name: 'react-cc-form',
     description:
-      'A full-stack web application built to keep track of embroidery floss colours on hand. Embroidery floss is used in crafts such as cross-stitch where patterns may require many colours to be used.',
+      'A react component designed to handle the credit card portion of any checkout flow. Sleek design and mobile friendly make it a great fit for any website.',
     frontend: ['React'],
-    backend: ['Node.js', 'Express', 'MongoDB'],
+    backend: [],
     cms: [],
     links: [
       {
         github: true,
-        href: '/',
+        href: 'https://github.com/aaren-chabot/react-cc-form',
         text: 'GitHub Repository'
       }
     ]
