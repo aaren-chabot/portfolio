@@ -38,6 +38,7 @@ const Services = () => {
       </ul>
       <Spacer size="lg" />
       <CTABox
+        anchor="contact"
         ctaText="Contact"
         bodyText="I offer free consultations and basic web advice. Feel free to reach out no matter your project's stage."
       ></CTABox>
