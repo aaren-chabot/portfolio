@@ -11,7 +11,7 @@ export default [
       {
         github: true,
         href: 'https://github.com/aaren-chabot/ecom-site',
-        text: 'Frontend Repository'
+        text: 'GitHub Repository'
       }
     ]
   },
