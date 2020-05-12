@@ -41,7 +41,7 @@ export default [
     name: 'react-cc-form',
     description:
       'A react component designed to handle the credit card portion of any checkout flow. Sleek design and mobile friendly make it a great fit for any website.',
-    frontend: ['React'],
+    frontend: ['React', 'Netlify'],
     backend: [],
     cms: [],
     links: [
