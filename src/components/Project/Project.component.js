@@ -52,7 +52,7 @@ const Project = ({ project }) => {
         </ul>
       </Typography>
       {links.map(({ text, href, github }) => (
-        <div className={styles.links}>
+        <div className={styles.links} key={text}>
           <Icon icon={github ? 'github' : 'exit'}></Icon>
           <Link href={href} key={text} text={text} />
         </div>
