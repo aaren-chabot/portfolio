@@ -6,7 +6,7 @@
   display: flex;
   flex-flow: column nowrap;
 
-  div:nth-child(4n + 5) {
+  div:nth-child(2n + 4) {
     align-self: flex-end;
   }
 
